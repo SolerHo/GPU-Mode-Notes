@@ -1,0 +1,15 @@
+{
+  "name": "gpu-mode-notes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GPU-Mode Lecture 学习笔记（VitePress 站点）",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
