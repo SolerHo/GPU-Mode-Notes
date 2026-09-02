@@ -1,0 +1,13 @@
+/* 弹窗淡入动画（viewerjs 以 transition:false 运行时无内置过渡，用动画补偿） */
+.viewer-container.viewer-in {
+  animation: viewer-fade-in 0.2s ease;
+}
+
+@keyframes viewer-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

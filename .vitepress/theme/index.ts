@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
+import './style.css'
 import { nextTick, onMounted, watch } from 'vue'
 import { useRoute } from 'vitepress'
 import type { Theme } from 'vitepress'
@@ -14,6 +15,9 @@ function initViewer() {
   if (!container) return
   viewer = new Viewer(container as HTMLElement, {
     selector: 'img',
+    // 不依赖 transitionend 事件（某些环境下 CSS 过渡时长被覆盖为 0，
+    // 导致 shown() 永远不执行、弹窗打开后无图片渲染）
+    transition: false,
     navbar: false, // 不显示底部缩略图条
     title: false, // 不显示文件名标题
     toolbar: {
