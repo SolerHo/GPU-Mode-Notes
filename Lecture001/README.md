@@ -172,7 +172,7 @@ python3 pytorch_profiler.py
 tensorboard --logdir=./log
 ```
 
-点击 http://localhost:6006/ 后显示如下：
+点击 `http://localhost:6006/` 后显示如下：
 
 ![](./img/pytorch_profiler_02.png)
 
