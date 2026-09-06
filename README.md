@@ -16,10 +16,10 @@
 
 ## 笔记内容
 
-| Lecture| Topics Title| Speaker| Notes| Code|Status|
-|--|--|--|--|--|--|
-| 001| Profiling and Integrating CUDA kernels in PyTorch| [Mark Saroufim](https://x.com/marksaroufim)| [Lecture001_Notes](Lecture001/)|||
-| 002| Recap Ch. 1-3 from the PMPP book| | Lecture002_Notes|||
+| Lecture| Topics Title| Speaker| Notes|Status|
+|--|--|--|--|--|
+| 001| Profiling and Integrating CUDA kernels in PyTorch| [Mark Saroufim](https://x.com/marksaroufim)| [Lecture001_Notes](Lecture001/)|✅Done|
+| 002| Recap Ch. 1-3 from the PMPP book| | [Lecture002_Notes](./Lecture002/)|✅Done|
 | 003| Getting Started With CUDA| | Lecture003_Notes|||
 | 004| Intro to Compute and Memory Architecture| | Lecture004_Notes|||
 | 005| Going Further with CUDA for Python Programmers| | Lecture005_Notes|||
@@ -139,5 +139,4 @@
 
 - https://github.com/gpu-mode
 
-
-关于支付和订单的也一并做了吧。这个前期没啥影响。后续我单独再开页面调试就方便了。CSS风格看起来就像老古董似的。所以最好看起来好看而且别那么多丑。
+- The Book of Reference -- PMPP : 《[Programming Massively Parallel Processors](https://www.amazon.com/Programming-Massively-Parallel-Processors-Hands/dp/0323912311/ref=sr_1_1?crid=60S1S1SMZ3RT&keywords=programming+massively+parallel+processors+4th+edition&qid=1704978852&s=books&sprefix=programming+massively+parallel+processors+4th+edition%2Cstripbooks%2C131&sr=1-1&ufe=app_do%3Aamzn1.fos.18ed3cb5-28d5-4975-8bc7-93deae8f9840)》
