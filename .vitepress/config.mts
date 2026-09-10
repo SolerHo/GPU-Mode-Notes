@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { readdirSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import mathjax3 from 'markdown-it-mathjax3'
 import type { DefaultTheme } from 'vitepress'
 
 const REPO = 'https://github.com/SolerHo/GPU-Mode-Notes'
@@ -54,6 +55,20 @@ export default defineConfig({
 
   markdown: {
     image: { lazyLoading: true },
+    // 数学公式渲染（$...$ 行内 / $$...$$ 行间，构建时输出 SVG）
+    config: (md) => {
+      md.use(mathjax3)
+    },
+  },
+
+  // MathJax 输出 mjx-container 等自定义元素，需告知 Vue 按原生元素处理，
+  // 否则 SSR 阶段会被当作未注册组件渲染为空
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.startsWith('mjx-'),
+      },
+    },
   },
 
   /**

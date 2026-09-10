@@ -11,3 +11,14 @@
     opacity: 1;
   }
 }
+
+/* 右侧"本页目录"：当前所在标题高亮更明显 */
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1); /* 品牌蓝 */
+  font-weight: 600;
+}
+
+/* 隐藏当前项左侧的蓝色竖线，仅用标题文字颜色区分 */
+.VPDocAside .outline-marker {
+  display: none;
+}

@@ -13,6 +13,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "viewerjs": "^1.12.0"
   }
 }
